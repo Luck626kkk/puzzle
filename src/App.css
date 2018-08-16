@@ -5,4 +5,103 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.puzzles{
+  width: 900px;
+  height: 600px;
+  background:rgba(172, 176, 183, .5);
+  margin: 100px auto;
+}
+.puzzle{
+  width:300px;
+  height: 200px;
+  float:left;
+}
+.puzzle{
+  box-sizing: border-box;
+  border: 1px dotted black;
+}
+.puzzle > img{
+  width: 300px;
+  height: 200px;
+}
+
+
+.blocks{
+  width:1500px;
+  height: 400px;
+  background:rgba(46, 46, 48, .5);
+  margin: 0 auto;
+}
+.p-block{
+  width:300px;
+  height: 200px;
+  float:left;
+  box-sizing: border-box;
+  border: 1px dotted black;
+}
+.blocks > .block-1{
+  width: 1500px;
+  height: 200px;
+}
+.blocks > .block-2{
+  width:1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.p-block > img, .p-block > img{
+  width:300px;
+  height: 200px;
+}
+
+
+.winner{
+  position: absolute;
+  height: 100vh;
+  width:  100%;
+  top:0;
+  left:0;
+  background: rgba(54, 55, 56, .8);
+}
+.winner > .winner-block{
+  position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  margin: auto;
+  width: 25%;
+  height:400px;
+  background: #fff;
+  border: 5px red inset;
+} 
+.winner-block > p{
+  margin-top: 150px;
+  font-size: 3rem;
+  text-align: center;
+}
+.winner-block > .close{
+  width: 160px;
+  height: 60px;
+  background:  rgb(195, 231, 231);
+  margin:  0 auto;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height:60px;
+  box-shadow: 0px 10px 24px -7px #1a1b19;
+  cursor: pointer;
+}
+
+
+[draggable="true"] {
+  /*
+   To prevent user selecting inside the drag source
+  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
