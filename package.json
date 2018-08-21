@@ -1,7 +1,7 @@
 {
   "name": "puzzle",
   "version": "0.1.0",
-  "homepage":"https://luck626kkk.github.io/puzzle/",
+  "homepage":"https://luck626kkk.github.io/puzzle",
   "private": true,
   "dependencies": {
     "ajv": "^6.5.3",
